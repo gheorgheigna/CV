@@ -4,35 +4,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CV</title>   
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.min.css"/>
-</head>
+    
 
 <body> 
         <!-- sidebar-->
   <aside id="sidebar" class="sidebar_navigation">
-    <div class="sidebar-header" >
-      <i><button class="closebtn" onclick="closeNav()">x</button></i>
-      
-      
-    </div>
-    
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
+    <div><img src="avatar.JPG" alt="poza"></div>
+    <nav>
+    <a onclick="openPage('home',this)" id="defaultOpen">&#127968; Me</a>
+    <a onclick="openPage('aboutme',this)" >About me</a>
+    <a id="experience">Experience</a>
+    <a href="#">Educations</a>
+    <a href="#">Skills</a>
+    <a href="#">Other info</a>
     <a href="#">Contact</a>
+  </nav>
   </aside>
          <!-- content -->
-  <div id="content">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-   <div style="height: 500px"></div>
-   
+  <div id="content"  >
+    <span style="font-size:30px;cursor:pointer" id="openclose" onclick="openclose()">&#9776; </span>
+   <div id="home" class="tabcontent" >
+    <h2 class="home_h3">IGNA GHEORGHE</h2>
+    <h3 class="home_h3">Part time - Clerk in commercial activities S.C AutoRulota SRL</h3>
+    <h4 class="home_h3">From Scariosara, Alba</h4>
+  </div>
+  <div id="aboutme" class="tabcontent" >
+    <p>I am a serious person who carries out my projects and does not give up until I get the desired results.</p>
+      <p> I have teamwork skills, acquired through professional experience (on the job and in projects during college), I also
+      perform well in individual work. </p>
+      <p>My first encounter with web programming/development was in high school, creating various web applications, including
+      an "Online Library". Meanwhile, in college and after, I interacted more with embedded programming. I'm now studying JavaScript, Bootstrap, Angular, PhP, Sql, MySql and all that will follow. Of all of them Web Development I think suits me best.
+      I like to create..</p>
+  </div>
+  
+  
+  
    
   </div>
          <!-- javascript -->
-  <script src="sidebar_app.js"></script>
+  <script src="sidebar_app.js">  </script>
   
   <footer>
     <p>Find me on social media.</p>
   </footer>
 </body>
+
 
