@@ -11,8 +11,8 @@
   <aside id="sidebar" class="sidebar_navigation">
     <div><img src="avatar.JPG" alt="poza"></div>
     <nav>
-    <a onclick="openPage('home',this)" id="defaultOpen">&#127968; Me</a>
-    <a onclick="openPage('aboutme',this)" >About me</a>
+    <a onclick="openPage('home')" id="defaultOpen">&#127968; Me</a>
+    <a onclick="openPage('aboutme')" >About me</a>
     <a id="experience">Experience</a>
     <a href="#">Educations</a>
     <a href="#">Skills</a>
@@ -22,19 +22,50 @@
   </aside>
          <!-- content -->
   <div id="content"  >
+    <div>
     <span style="font-size:30px;cursor:pointer" id="openclose" onclick="openclose()">&#9776; </span>
+    <button id="login" class="login_button" onclick="openPage('login_page')">Login</button>
+  </div>
    <div id="home" class="tabcontent" >
-    <h2 class="home_h3">IGNA GHEORGHE</h2>
-    <h3 class="home_h3">Part time - Clerk in commercial activities S.C AutoRulota SRL</h3>
-    <h4 class="home_h3">From Scariosara, Alba</h4>
+    <h2 id="home_h2">IGNA GHEORGHE</h2>
+    <h3 id="home_h3">Part time - Clerk in commercial activities S.C AutoRulota SRL</h3>
+    <h4 id="home_h4">From Scariosara, Alba</h4>
   </div>
   <div id="aboutme" class="tabcontent" >
+    <div id="meabout">
     <p>I am a serious person who carries out my projects and does not give up until I get the desired results.</p>
       <p> I have teamwork skills, acquired through professional experience (on the job and in projects during college), I also
       perform well in individual work. </p>
       <p>My first encounter with web programming/development was in high school, creating various web applications, including
       an "Online Library". Meanwhile, in college and after, I interacted more with embedded programming. I'm now studying JavaScript, Bootstrap, Angular, PhP, Sql, MySql and all that will follow. Of all of them Web Development I think suits me best.
       I like to create..</p>
+    </div>
+  </div>
+  <div id="login_page" class="tabcontent">
+    
+    
+      <div> 
+          <label>Username : </label> 
+          <input id="user" type="text" placeholder="Enter Username" name="username" required >
+          <label>Password : </label> 
+          <input id="pass" type="password" placeholder="Enter Password" name="password" required>
+          <button type="submit" onclick="test('after_login')">Login</button> 
+         <!-- <input type="checkbox" checked="checked"> Remember me 
+          <button type="button" class="cancelbtn"> Cancel</button> 
+          Forgot <a href="#"> password? </a> -->
+      </div> 
+  
+  </div>
+  <div id="after_login" class="tabcontent">
+    <p>yes</p>
+    <label>Actual job: </label> 
+    <input id="new_job" type="text" required>
+    <button type="submit" onclick="submitt('home_h3','new_job')">Submitt</button> 
+
+    <label>aboutme: </label> 
+    <input id="new_me" type="text" required>
+    <button type="submit" onclick="submitt('meabout','new_me')">Submitt</button> 
+
   </div>
   
   

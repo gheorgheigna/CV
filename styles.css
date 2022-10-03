@@ -64,7 +64,7 @@ body {
   #content {
     background-color: rgb(218, 233, 233);
     
-    
+    align-items: center;
     transition: margin-left .5s;
     padding: 16px;
   }
@@ -77,5 +77,13 @@ body {
   text-align: justify;
   height: 500px
   
+}
+.login_button {
+  border: 0px;
+  background-color: azure;
+  height: 20px;
+  width: 40px;
+  align-items: center;
+
 }
  
