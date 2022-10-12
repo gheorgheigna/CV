@@ -75,7 +75,8 @@ body {
 .tabcontent {
   font-size: larger;
   text-align: justify;
-  height: 500px
+  height: 500px;
+  padding: 16px 45px 10px 36px;
   
 }
 .login_button {

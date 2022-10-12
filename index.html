@@ -15,7 +15,7 @@
     <a onclick="openPage('aboutme')" >About me</a>
     <a id="experience">Experience</a>
     <a href="#">Educations</a>
-    <a href="#">Skills</a>
+    <a onclick="openPage('Skills')">Skills</a>
     <a href="#">Other info</a>
     <a href="#">Contact</a>
   </nav>
@@ -57,7 +57,7 @@
   
   </div>
   <div id="after_login" class="tabcontent">
-    <p>yes</p>
+    
     <label>Actual job: </label> 
     <input id="new_job" type="text" required>
     <button type="submit" onclick="submitt('home_h3','new_job')">Submitt</button> 
@@ -66,8 +66,26 @@
     <input id="new_me" type="text" required>
     <button type="submit" onclick="submitt('meabout','new_me')">Submitt</button> 
 
+    <label>tehnicskills: <label >click_on_change</label>  </label> 
+    
+    <button type="submit" onclick="submitt_skill('skills')">Change</button> 
+
+
   </div>
-  
+  <div id="Skills" class="tabcontent">
+    <h2> Tehnic Skills</h2>
+    <p>Html</p>
+    <progress class="tehnicskills" max="100" value="50"></progress>
+    <p>Css<p>
+    <progress class="tehnicskills" max="100" value="50"></progress>
+    <p>javascript</p>
+    <progress class="tehnicskills" max="100" value="60"></progress>
+    <p>PhP</p>
+    <progress class="tehnicskills" max="100" value="10"></progress>
+    <p>MySQLS</p>
+    <progress class="tehnicskills" max="100" value="10"></progress>
+
+  </div>
   
   
    

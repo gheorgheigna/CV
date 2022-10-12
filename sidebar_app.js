@@ -66,4 +66,22 @@ function test(pageName){
 function submitt(text_to_change,input_text){
   document.getElementById(text_to_change).innerHTML=document.getElementById(input_text).value;
   console.log("ana");
+  if(input_text="skills"){
+    document.getElementById(text_to_change).value=document.getElementById(input_text).value;
+  }
+}
+function submitt_skill(){
+  const skills=["HTML","CSS","JavaScript","PHP","MySQL"];
+  let i, tehnic_skills, tehnic_skills1;
+  tehnic_skills=document.getElementsByClassName("tehnicskills")
+  tehnic_skills1=document.getElementById('skills')
+  for (i = 0; i < tehnic_skills.length; i++){
+    let valuer = prompt(skills[i],"0--100%");
+    tehnic_skills[i].value=valuer;
+    console.log(tehnic_skills[i].value);
+    
+    
+    console.log(valuer);
+
+  }
 }
