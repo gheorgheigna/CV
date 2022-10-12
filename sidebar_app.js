@@ -71,12 +71,12 @@ function submitt(text_to_change,input_text){
   }
 }
 function submitt_skill(){
-  const skills=["HTML","CSS","JavaScript","PHP","MySQL"];
+  const skillsnames=["HTML","CSS","JavaScript","PHP","MySQL"];
   let i, tehnic_skills, tehnic_skills1;
   tehnic_skills=document.getElementsByClassName("tehnicskills")
-  tehnic_skills1=document.getElementById('skills')
+ 
   for (i = 0; i < tehnic_skills.length; i++){
-    let valuer = prompt(skills[i],"0--100%");
+    let valuer = prompt(skillsnames[i],"0--100%");
     tehnic_skills[i].value=valuer;
     console.log(tehnic_skills[i].value);
     
