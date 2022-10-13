@@ -83,10 +83,21 @@ function submitt(text_to_change,input_text){
     }
    break;
   case "experience":
+    let details=[];
     for (i = 0; i < exp_details.length; i++){
-    let details = prompt(exp_details[i],"get new "+exp_details[i]);
-    }
-   break;
+     details[i] = prompt(exp_details[i],"get new "+exp_details[i]);
+     console.log(details);
+   }
+   
+   document.getElementById('period').innerHTML=details[0];
+   document.getElementById('home_h3').innerHTML=details[1];
+   document.getElementById('jobname').innerHTML=details[1];
+   document.getElementById('type').innerHTML=details[2];
+   document.getElementById('competences').innerHTML=details[3];
+   
+   document.getElementById('skillsaquired').innerHTML="Skills anc competences aquired:";
+   
+  break;
   default:
     document.getElementById(text_to_change).innerHTML=document.getElementById(input_text).value;
  }
