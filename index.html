@@ -13,19 +13,22 @@
     <nav>
     <a onclick="openPage('home')" id="defaultOpen">&#127968; Me</a>
     <a onclick="openPage('aboutme')" >About me</a>
-    <a id="experience">Experience</a>
+    <a onclick="openPage('experience')">Experience</a>
     <a href="#">Educations</a>
-    <a onclick="openPage('Skills')">Skills</a>
+    <a onclick="openPage('skills')">Skills</a>
     <a href="#">Other info</a>
     <a href="#">Contact</a>
   </nav>
   </aside>
          <!-- content -->
   <div id="content"  >
-    <div>
+  <div class="grid_container">
     <span style="font-size:30px;cursor:pointer" id="openclose" onclick="openclose()">&#9776; </span>
-    <button id="login" class="login_button" onclick="openPage('login_page')">Login</button>
-  </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <button id="login" class="login_button" onclick="openPage('login_page')"><h2>Login</h2></button>
+    </div>
    <div id="home" class="tabcontent" >
     <h2 id="home_h2">IGNA GHEORGHE</h2>
     <h3 id="home_h3">Part time - Clerk in commercial activities S.C AutoRulota SRL</h3>
@@ -42,19 +45,13 @@
     </div>
   </div>
   <div id="login_page" class="tabcontent">
-    
-    
-      <div> 
           <label>Username : </label> 
           <input id="user" type="text" placeholder="Enter Username" name="username" required >
+          <br>
           <label>Password : </label> 
           <input id="pass" type="password" placeholder="Enter Password" name="password" required>
           <button type="submit" onclick="test('after_login')">Login</button> 
-         <!-- <input type="checkbox" checked="checked"> Remember me 
-          <button type="button" class="cancelbtn"> Cancel</button> 
-          Forgot <a href="#"> password? </a> -->
-      </div> 
-  
+      
   </div>
   <div id="after_login" class="tabcontent">
     
@@ -67,12 +64,14 @@
     <button type="submit" onclick="submitt('meabout','new_me')">Submitt</button> 
     <br>
     <label>tehnicskills: <label >click_on_change</label>  </label> 
-    
-    <button type="submit" onclick="submitt_skill('skills')">Change</button> 
+    <button type="submit" onclick="submitt('null','skills')">Change</button> 
+    <br>
+    <label>experience: <label >click_on_change</label>  </label> 
+    <button type="submit" onclick="submitt('null','experience')">Change</button> 
 
 
   </div>
-  <div id="Skills" class="tabcontent">
+  <div id="skills" class="tabcontent">
     <h2> Tehnical Skills</h2>
     <h5> <i>Login to change the value</i> </h5>
     <p>Html</p>
@@ -86,6 +85,43 @@
     <p>MySQLS</p>
     <progress class="tehnicskills" max="100" value="10"></progress>
 
+  </div>
+  <div id="experience" class="tabcontent">
+    <table class="table1" style="width:100%">
+      <tr>
+        <th>Period</th>
+        <th>Job</th>
+      </tr>
+      <tr class="last_work">
+        <th rowspan="4">Aug 2022 - present</th>
+        <td>Part time - Clerk in commercial activities - S.C AutoRulota SRL</td>
+      </tr>
+      <tr>
+        <td>Remote|Marketing</td>
+      </tr>
+      <tr>
+        <td>Skills and competences acquired:</td>
+      </tr>
+      <tr>
+        <td>Web Development, Marketing, Web Promotion, comunication, networking</td>
+      </tr>
+      <tr style="border-top: 1px solid black;;">
+        <th rowspan="5">Iun 2020 - Iun 2022</th>
+        <td >Electrician in civil installations/house hold electrical repairs</td>
+      </tr>
+      <tr>
+        <td>Remote | Construction/Instalation|Services with clients</td>
+      </tr>
+      <tr>
+        <td>execution, replacement or repair of electrical instalallations at the customer’s home</td>
+      </tr>
+      <tr>
+        <td>Skills and competences acquired:</td>
+      </tr>
+      <tr>
+        <td>Electrical instalations, curcuit design, identifying customer needs, finding the most advantageous solutions</td>
+      </tr>
+    </table>
   </div>
   
   

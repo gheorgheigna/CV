@@ -64,24 +64,33 @@ function test(pageName){
 
 }
 function submitt(text_to_change,input_text){
-  document.getElementById(text_to_change).innerHTML=document.getElementById(input_text).value;
-  console.log("ana");
-  if(input_text="skills"){
-    document.getElementById(text_to_change).value=document.getElementById(input_text).value;
-  }
-}
-function submitt_skill(){
   const skillsnames=["HTML","CSS","JavaScript","PHP","MySQL"];
-  let i, tehnic_skills, tehnic_skills1;
+  const exp_details=["Period","Job_Name","Job_details","Competence_aquired"]
+  let i, tehnic_skills;
   tehnic_skills=document.getElementsByClassName("tehnicskills")
- 
-  for (i = 0; i < tehnic_skills.length; i++){
-    let valuer = prompt(skillsnames[i],"0--100%");
-    tehnic_skills[i].value=valuer;
-    console.log(tehnic_skills[i].value);
-    
-    
-    console.log(valuer);
+  
+  console.log(input_text);
 
-  }
+   switch(input_text){
+  case "skills":
+    for (i = 0; i < tehnic_skills.length; i++){
+      let valuer = prompt(skillsnames[i],"0--100%");
+      tehnic_skills[i].value=valuer;
+      console.log(tehnic_skills[i].value);
+      
+      console.log(valuer);
+  
+    }
+   break;
+  case "experience":
+    for (i = 0; i < exp_details.length; i++){
+    let details = prompt(exp_details[i],"get new "+exp_details[i]);
+    }
+   break;
+  default:
+    document.getElementById(text_to_change).innerHTML=document.getElementById(input_text).value;
+ }
+
+
+
 }
